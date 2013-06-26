@@ -1,5 +1,5 @@
 #COMPUTER SCIENCE FUNDAMENTALS (CSF)
-###COURSE SYLLABUS
+###COURSE SYLLABUS!!
 
 **SESSION 1:**
 Using an IDE, components of a computer, static vs. 
