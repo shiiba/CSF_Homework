@@ -57,22 +57,6 @@ public class Lesson02Samples {
 
     // Methods to fill in
     public static void reverseNumbers() {
-        // Scanner scanner = new Scanner(System.in);
-        // System.out.println("How many numbers do you want to enter? ");
-        // int s = scanner.nextInt();
-        // int[] numbers = new int[s];
-        // int[] reverseNumbers = new int[s];
-
-        // for (int i = 0; i < s; i++) {
-        //     System.out.println("Enter a number: ");
-        //     int n = scanner.nextInt();
-        //     numbers[i] = n;
-        // }
-        // for (int j = 1 ; j == s; j++) {
-        //     int x = s - j;
-        //     reverseNumbers[j-1] = numbers[x];
-        //     System.out.println("Your numbers in reverse: " + reverseNumbers[j-1]);
-        // }
 
         // 1) Ask the user for how many numbers they want to enter
         ArrayList<Integer> numbers = new ArrayList<Integer>();
