@@ -6,9 +6,9 @@ public class Internet extends Reservation{
         this.website = website;
     }
 
-    public void describe() {
-        System.out.println("Type: Internet - " + this.website);
-        super.describe();
+    public String describe() {
+        String amendedString = super.describe() + " Type: Internet - " + this.website;
+        return amendedString;
     }
 }
 

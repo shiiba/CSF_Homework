@@ -12,8 +12,9 @@ public class Reservation {
         this.name = n;
     }
 
-    public void describe() {
-        System.out.println(this.name + "has a reservation for " + this.numberOfPeople + " at " + this.time + " hour.");
+    public String describe() {
+        String spit = this.name + " has a reservation for " + this.numberOfPeople + " at " + this.time + " hour.";
+        return spit;
     }
 
     public static Reservation prepareReservation() {
@@ -24,7 +25,7 @@ public class Reservation {
         System.out.println("Number of people: ");
         int people = scanner.nextInt();
 
-        System.out.println("Time of reservation (in hours): ");
+        System.out.println("Time of reservation (in hours, 0 - 23): ");
         int hour = scanner.nextInt();
 
         System.out.println("I(n) person, (p)hone, or (i)nternet reservation?");

@@ -7,9 +7,9 @@ public class Phone extends Reservation {
         this.phoneNumber = phoneNumber;
     }
 
-    public void describe() {
-        System.out.println("Type: Phone - " + this.phoneNumber);
-        super.describe();
+    public String describe() {
+        String amendedString = super.describe() + " Type: Phone - " + this.phoneNumber;
+        return amendedString;
     }
 
 }
