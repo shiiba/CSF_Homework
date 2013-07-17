@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Chihuahua extends Dog {
 
 
@@ -7,6 +8,8 @@ public class Chihuahua extends Dog {
     }
 }
 =======
+=======
+>>>>>>> origin
 
 public class Chihuahua extends Dog {
     public Chihuahua(String name) {
@@ -21,4 +24,16 @@ public class Chihuahua extends Dog {
         return "Chihuahua";
     }
 }
+<<<<<<< HEAD
 >>>>>>> master
+=======
+=======
+public class Chihuahua extends Dog {
+
+
+    public String bark() {
+        return "Yip!";
+    }
+}
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin

@@ -2,6 +2,13 @@ public class IntArraySorter {
 
     public int[] sortArray(int[] array) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        // For each number in the array
+        // Look at every number after it, in sequence
+        // If the first number is greater than the second, swap them
+=======
+>>>>>>> origin
         // Selection Sort - One of the conceptually simpler sorting algorithms; not terribly efficient
         // For each element in the array;
         // For inspectedElement in array after element;
@@ -18,11 +25,15 @@ public class IntArraySorter {
                 }
             }
         }
+<<<<<<< HEAD
 =======
         // For each number in the array
         // Look at every number after it, in sequence
         // If the first number is greater than the second, swap them
 >>>>>>> master
+=======
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin
 
         for (int i = 0; i < array.length; i++) {
             for (int j = i; j < array.length; j++) {

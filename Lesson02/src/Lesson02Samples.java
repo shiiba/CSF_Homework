@@ -41,6 +41,15 @@ public class Lesson02Samples {
 
     public static boolean stringIsAllAs(String s) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        int i = -1;
+        while (i < s.length() - 1) {
+            i++;
+            char character = s.charAt(i);
+            if (character != 'a' && character != 'A') {
+=======
+>>>>>>> origin
         int i = 0;
         while (i < s.length()) {
             char character = s.charAt(i);
@@ -48,6 +57,7 @@ public class Lesson02Samples {
 
             }
             else {
+<<<<<<< HEAD
 =======
         int i = -1;
         while (i < s.length() - 1) {
@@ -55,6 +65,9 @@ public class Lesson02Samples {
             char character = s.charAt(i);
             if (character != 'a' && character != 'A') {
 >>>>>>> master
+=======
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin
                 return false;
             }
             i++;
@@ -82,11 +95,14 @@ public class Lesson02Samples {
 
         // 3) Print them out in reverse
 <<<<<<< HEAD
+<<<<<<< HEAD
         for (int i = numbers.size()-1; i >=0; i--) {
             System.out.println(numbers.get(i));
         }
 
 =======
+=======
+>>>>>>> origin
         System.out.print("The amount of numbers you'd like to enter: ");
         Scanner scanner = new Scanner(System.in);
         int count = scanner.nextInt();
@@ -105,12 +121,22 @@ public class Lesson02Samples {
         for (int i = userInput.length - 1; i >= 0; i--) {
             System.out.print(userInput[i] + " ");
         }
+<<<<<<< HEAD
 >>>>>>> master
+=======
+=======
+        for (int i = numbers.size()-1; i >=0; i--) {
+            System.out.println(numbers.get(i));
+        }
+
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin
     }
 
     public static void reverseArray() {
         int[] array = {12, 320, 231, 214, 12312, 41024, 124, 12, 4123, 123, 1234, 634, 85, 685, 68};
         // 1) Reverse the above array above without creating a new array, then print it out
+<<<<<<< HEAD
 <<<<<<< HEAD
         int n = array.length - 1;
         for (int i = 0; i < (array.length / 2); i++) {
@@ -120,6 +146,8 @@ public class Lesson02Samples {
         }
         System.out.println(Arrays.toString(array));
 =======
+=======
+>>>>>>> origin
 
         System.out.println("Original array: " + Arrays.toString(array));
 
@@ -131,13 +159,26 @@ public class Lesson02Samples {
         }
 
         System.out.println("Reversed Array: " + Arrays.toString(array));
+<<<<<<< HEAD
 >>>>>>> master
+=======
+=======
+        int n = array.length - 1;
+        for (int i = 0; i < (array.length / 2); i++) {
+            int temp = array[i];
+            array[i] = array[n-i];
+            array[n-i] = temp;
+        }
+        System.out.println(Arrays.toString(array));
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin
     }
 
     public static void isGeneticSequence() {
         // 1) Ask the user for a string
         // 2) If the string contains only the characters 'G', 'A', 'T', or 'C' (case-sensitive) print true
         // 3) Otherwise, print false
+<<<<<<< HEAD
 <<<<<<< HEAD
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter in a string of letters: ");
@@ -156,6 +197,8 @@ public class Lesson02Samples {
         }
         System.out.println(print);
 =======
+=======
+>>>>>>> origin
         System.out.print("Enter a string: ");
         Scanner scanner = new Scanner(System.in);
 
@@ -178,7 +221,28 @@ public class Lesson02Samples {
                 return false;
         }
         return true;
+<<<<<<< HEAD
 >>>>>>> master
+=======
+=======
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter in a string of letters: ");
+        String response = scanner.next();
+        int i = 0;
+        String print = "";
+        while (i < response.length()) {
+            char character = response.charAt(i);
+            if (character == 'G' || character == 'A' || character == 'T' || character == 'C') {
+                print = "true";
+            }
+            else {
+                print = "false";
+            }
+            i++;
+        }
+        System.out.println(print);
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin
     }
 
     public static void inputAndSearch() {
@@ -187,6 +251,22 @@ public class Lesson02Samples {
         // 3) If the word exists in the first 10 words, print true, otherwise print false
         // 4) Return to step 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        final int NUMBER_WORDS = 10;
+        ArrayList<String> words = new ArrayList<String>(NUMBER_WORDS);
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < NUMBER_WORDS; i++) {
+            System.out.print("\nEnter a word: ");
+            words.add(scanner.next());
+        }
+
+        while(true) {
+            System.out.print("\nEnter a search term: ");
+            System.out.println(words.contains(scanner.next()) + " that you entered that word");
+        }
+=======
+>>>>>>> origin
         ArrayList<String> entries = new ArrayList<String>();
 
         Scanner scanner = new Scanner(System.in);
@@ -213,6 +293,7 @@ public class Lesson02Samples {
 
 
 
+<<<<<<< HEAD
 =======
         final int NUMBER_WORDS = 10;
         ArrayList<String> words = new ArrayList<String>(NUMBER_WORDS);
@@ -227,6 +308,9 @@ public class Lesson02Samples {
             System.out.println(words.contains(scanner.next()) + " that you entered that word");
         }
 >>>>>>> master
+=======
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin
     }
 
     public static void calculator() {
@@ -236,6 +320,7 @@ public class Lesson02Samples {
         while (true) {
             System.out.print("Enter your first number: ");
             Integer leftOperand = scanner.nextInt();
+<<<<<<< HEAD
 <<<<<<< HEAD
             System.out.print("Enter your operator (+, - or *): ");
             String operator = scanner.next();
@@ -251,6 +336,8 @@ public class Lesson02Samples {
                 System.out.println("Resulting value is: " + (leftOperand.intValue() * rightOperand.intValue()));
             }
 =======
+=======
+>>>>>>> origin
             String operator = scanner.next(); // The "+" sign, just ignore this
             Integer rightOperand = scanner.nextInt();
 
@@ -269,7 +356,25 @@ public class Lesson02Samples {
             }
 
             System.out.println("Resulting value is: " + result);
+<<<<<<< HEAD
 >>>>>>> master
+=======
+=======
+            System.out.print("Enter your operator (+, - or *): ");
+            String operator = scanner.next();
+            System.out.print("Enter your second number: ");
+            Integer rightOperand = scanner.nextInt();
+            if (operator.equals("+")) {
+                System.out.println("Resulting value is: " + (leftOperand.intValue() + rightOperand.intValue()));
+            }
+            else if (operator.equals("-")) {
+                System.out.println("Resulting value is: " + (leftOperand.intValue() - rightOperand.intValue()));
+            }
+            else if (operator.equals("*")) {
+                System.out.println("Resulting value is: " + (leftOperand.intValue() * rightOperand.intValue()));
+            }
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
+>>>>>>> origin
         }
     }
 }
