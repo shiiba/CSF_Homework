@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #Rudd's COMPUTER SCIENCE FUNDAMENTALS (CSF)
 ###COURSE SYLLABUS
+=======
+#COMPUTER SCIENCE FUNDAMENTALS (CSF)
+###COURSE SYLLABUS!!
+>>>>>>> 0a0b612d688e76e42b1735c40ee87acee384e48e
 
 **SESSION 1:**
 Using an IDE, components of a computer, static vs. 
