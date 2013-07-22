@@ -22,12 +22,32 @@ public class IntBST {
 
     public void insertValue(int value) {
         // TODO: Implement insert value for a binary search tree
-        throw new UnsupportedOperationException("Not implemented!");
+        if (this.rootNode == null) {
+            this.rootNode = new IntNode(value);
+        } else {
+            IntNode n = rootNode;
+
+                while (n.getValue() != value) {
+                    if (value < n.getValue()) {
+                       if (n.getLeftChild() == null) {
+                           n.setLeftChild(new IntNode(value));
+                       }
+                        n = n.getLeftChild();
+                    }
+                    if (value > n.getValue()) {
+                        if (n.getRightChild() == null) {
+                            n.setRightChild(new IntNode(value));
+                        }
+                        n = n.getRightChild();
+                    }
+                }
+        }
+        // throw new UnsupportedOperationException("Not implemented!");
     }
 
     public boolean search(int value) {
         // TODO: Implement search for a value for a binary search tree
-        throw new UnsupportedOperationException("Not implemented!");
+       // throw new UnsupportedOperationException("Not implemented!");
         return false;
     }
 

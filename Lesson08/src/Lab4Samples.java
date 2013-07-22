@@ -10,7 +10,7 @@ public class Lab4Samples {
         if (result.equals("bst")) {
             bst();
         }
-        else if (result.equals("maxheap")) {
+         else if (result.equals("maxheap")) {
             maxHeap();
         }
         else {
