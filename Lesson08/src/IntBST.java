@@ -34,7 +34,7 @@ public class IntBST {
                        }
                         n = n.getLeftChild();
                     }
-                    if (value > n.getValue()) {
+                    else if (value > n.getValue()) {
                         if (n.getRightChild() == null) {
                             n.setRightChild(new IntNode(value));
                         }
