@@ -31,6 +31,20 @@ public class CoinCounter {
      * @return The total number of coins that are needed to make change for totalSum.
      */
     public int simpleNumberOfCoinsRequired(int totalSum) {
+        int count = 0;
+        int index = denominations.length - 1;
+        while (totalSum != 0) {
+            if ((totalSum / denominations[index]) >= 1) {
+                   totalSum = totalSum - denominations[index];
+                   count++;
+            } else {
+            index -= 1;
+            }
+        }
+        return count;
+
+        // throw new NotImplementedException();
+
         /*
             To calculate the number of coins required to give change in
             most sane coin denominations, a simple 'greedy' algorithm
@@ -52,7 +66,7 @@ public class CoinCounter {
             Assignment: Implement this algorithm below and make testSimpleNumberOfCoinsRequired pass.
          */
 
-        throw new NotImplementedException();
+
     }
 
     /**
@@ -89,7 +103,7 @@ public class CoinCounter {
             Third assignment: Make testTerribleDenominations pass
          */
 
-        throw new NotImplementedException();
+        // throw new NotImplementedException();
 
         // Instructor sample soln: Remove before giving to students:
         // Speed, O(m * n), m = totalSum, n = number of coins
@@ -100,5 +114,5 @@ public class CoinCounter {
         }
 
         return numberOfCoinsRequiredAtValue[totalSum];*/
-    }
+     }
 }

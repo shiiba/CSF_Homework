@@ -13,12 +13,12 @@ public class CSFLesson10 {
 
         System.out.println("Array: " + Arrays.toString(array));
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {           // O(n)
             float thisValue = array[i];
             float total = 0.0f;
-            for (int j = 0; j < 10; j++) {
+            for (int j = 0; j < 10; j++) {       // O(n)
                 total += array[j];
-            }
+            }                                    // cumulative: O(n^2)
             float average = total / 10.0f;
             System.out.println("Value " + thisValue + " is " + (thisValue / average) * 100.0f + "% of the average.");
         }
@@ -29,21 +29,21 @@ public class CSFLesson10 {
      */
     static void secondLab() {
         // Instantiate and populate an array of 10 random integers between 0 and 9.
-        int[] array = new int[10];
-        for (int i = 0; i < 10; i++) {
+        int[] array = new int[10];    // O(1)
+        for (int i = 0; i < 10; i++) {       // O(n)
             array[i] = (int) (Math.random() * 10.0);
         }
 
         System.out.println("Array: " + Arrays.toString(array));
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {    // O(n)
             int thisValue = array[i];
             boolean isDuplicate = false;
-            for (int j = 0; j < 10; j++) {
+            for (int j = 0; j < 10; j++) {       // O(n)
                 if ((i != j) && (thisValue == array[j])) {
                     isDuplicate = true;
                 }
-            }
+            }                                      // cumulative: O(n^2)
 
             if (isDuplicate) {
                 System.out.println("Value " + thisValue + " is a duplicate.");
